@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 12:59:25 2021
+
+@author: Rafli_Riansyah
+NAMA : Rafli Riansyah
+NIM : 064002100028
+
+"""
+def fibon(x):
+    if x <= 1:
+        return x 
+    else:
+        return(fibon(x-1) + fibon(x-2))
+def cetak(n):
+    if n <= 0:
+        print("angka positif")
+    else:
+        print('bilangan fibonanci ke-'+str(n), 'adalah',fibon(n))
+        
+while True:
+    try: 
+        angka = int(input("masukan angka nya : "))
+    except ValueError:
+        print("angka invalid, masukan angka bulat : ")
+    else:
+        cetak(angka)
+        
