@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 20 21:00:32 2021
+
+@author: Rafli_Riansyah
+NAMA : Rafli Riansyah
+NIM : 064002100028
+
+"""
+
+angka1 = int(input("masukan angka : "))
+angka2 = int(input("masukan pangkatnya : "))
+def pangkat(angka1,angka2):
+ 
+    if angka2 >= 1:
+        return angka1 * pangkat(angka1, angka2 - 1)
+
+    return angka1
+hasil = pangkat(angka1, angka2)
+
+print(f"hasil nya adalah = {hasil}")
+    
